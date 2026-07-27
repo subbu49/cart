@@ -32,7 +32,6 @@ export default function Login() {
   
   const [showPassword, setShowPassword] = useState(false)
   const [captchaCode, setCaptchaCode] = useState(generateCaptcha())
-  const [captchaInput, setCaptchaInput] = useState('')
   
   const { register, handleSubmit, formState: { errors }, watch, setValue } = useForm({
     resolver: yupResolver(schema),
